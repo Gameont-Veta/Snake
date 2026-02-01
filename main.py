@@ -93,4 +93,5 @@ while True:
 
     show_score()
     pygame.display.flip()
+
     clock.tick(15 + (score // 50))
