@@ -5,12 +5,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Build with Buildozer
+      - name: Build
         uses: akduy/buildozer-action@v2
         with:
           save_buildozer_cache: true
-      - name: Upload APK
+          buildozer_version: master
+      - name: Upload
         uses: actions/upload-artifact@v4
         with:
-          name: NeonSnake-APK
+          name: SerpienteNeon
           path: bin/*.apk
