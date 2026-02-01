@@ -1,15 +1,11 @@
-
 [app]
-title = Snake Neon
-package.name = snakeneon
-package.domain = org.test
+title = Neon Snake Cel
+package.name = neonsnakecel
+package.domain = org.gameont
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas
 version = 0.1
-requirements = python3,pygame==2.1.0
-orientation = landscape
+requirements = python3,kivy,pygame
+orientation = portrait
 fullscreen = 1
-android.api = 31
-android.minapi = 21
-android.ndk = 25b
-android.archs = arm64-v8a, armeabi-v7a
+android.archs = arm64-v8a
