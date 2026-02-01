@@ -4,8 +4,11 @@ import sys
 
 # Configuración inicial
 pygame.init()
-WIDTH, HEIGHT = 800, 600
-screen = pygame.display.set_mode((WIDTH, HEIGHT))
+# Cambia las líneas 7 y 8 por estas:
+info = pygame.display.Info()
+WIDTH = info.current_w
+HEIGHT = info.current_h
+screen = pygame.display.set_mode((WIDTH, HEIGHT), pygame.FULLSCREEN)
 
 # Colores Neón
 BLACK = (5, 5, 15)
@@ -95,3 +98,4 @@ while True:
     pygame.display.flip()
 
     clock.tick(15 + (score // 50))
+
