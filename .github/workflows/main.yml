@@ -14,5 +14,4 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: Neon-Snake-Release
-          path: bin/*.apk
+          name: Neon-Snake
